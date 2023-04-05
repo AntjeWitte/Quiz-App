@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet"
-        href="styles.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 
-    </head>
+    <script src="./index.js" defer></script>
 
-    <body>
-<h1> Quiz App </h1>
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    </body>
+  <body class="body" data-js="body">
+    <h1 class="header">Quiz App</h1>
+
+    <main>
+      <section>
+        <div class="question_card">
+          <p>What property flips the axes in flexbox?</p>
+          <button class="answer-button">Show Answer</button>
+          <br />
+          <button class="option">#html</button>
+          <button class="option">#flexbox</button>
+          <button class="option">#css</button>
+          <div class="ribbon" data-js="ribbon"></div>
+        </div>
+        <div class="question_card">
+          <p>Question 2</p>
+          <button class="answer-button">Show Answer</button>
+          <br />
+          <button class="option">#html</button>
+          <button class="option">#flexbox</button>
+          <button class="option">#css</button>
+          <div class="ribbon" data-js="ribbon"></div>
+        </div>
+      </section>
+      <footer>
+        <button class="btn"><i class="home"></i> Home</button>
+        <button class="btn"><i class="bookmark"></i> Bookmarked</button>
+        <button class="btn"><i class="face"></i> Profile</button>
+      </footer>
+    </main>
+  </body>
 </html>
