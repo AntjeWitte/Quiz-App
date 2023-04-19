@@ -17,12 +17,16 @@
   <body class="body" data-js="body">
     <h1 class="header">Quiz App</h1>
 
-    <main>
+    <main class="home" data-js="pageName">
       <section>
         <div class="question_card">
           <p>What property flips the axes in flexbox?</p>
-          <button class="answer-button">Show Answer</button>
+          <button class="answer-button" data-js="answerButton">
+            Show Answer
+          </button>
           <br />
+          <output data-js="answer-output">Answer</output>
+          <br /><br />
           <button class="option">#html</button>
           <button class="option">#flexbox</button>
           <button class="option">#css</button>
@@ -30,7 +34,9 @@
         </div>
         <div class="question_card">
           <p>Question 2</p>
-          <button class="answer-button">Show Answer</button>
+          <button class="answer-button" data-js="answerButton">
+            Show Answer
+          </button>
           <br />
           <button class="option">#html</button>
           <button class="option">#flexbox</button>
@@ -39,9 +45,15 @@
         </div>
       </section>
       <footer>
-        <button class="btn"><i class="home"></i> Home</button>
-        <button class="btn"><i class="bookmark"></i> Bookmarked</button>
-        <button class="btn"><i class="face"></i> Profile</button>
+        <div class="homeSection" data-js="footerHome">
+          <button class="btn"><i class="homeButton"></i> Home</button>
+        </div>
+        <div class="bookmarkSection" data-js="footerBookmark">
+          <button class="btn"><i class="bookmarkButton"></i> Bookmarked</button>
+        </div>
+        <div class="profileSection" data-ja="footerProfile">
+          <button class="btn"><i class="faceButton"></i> Profile</button>
+        </div>
       </footer>
     </main>
   </body>
